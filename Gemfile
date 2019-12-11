@@ -10,6 +10,8 @@ gem 'thin'
 gem 'shotgun'
 gem 'pry'
 gem 'tux'
+gem 'byebug'
+gem 'rack-flash3'
 
 group :test do
   gem 'launchy'

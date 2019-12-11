@@ -1,0 +1,6 @@
+<h1>Welcome to Artists Home Page</h1>
+<ul>List of Artists: 
+    <% @artists.each do |artist| %>
+    <li><a href="/artists/<%= artist.slug %>"><%= artist.name %></a></li>
+    <% end %>
+</ul>
