@@ -18,3 +18,5 @@ group :test do
   gem 'rack-test'
   gem 'database_cleaner'
 end
+
+gem "rack-flash", "~> 0.1.2"
