@@ -5,12 +5,10 @@ begin
 
   use Rack::MethodOverride
   run ApplicationController
-rescue ActiveRecord::PendingMigrationError => err
-  STDERR.puts err
+rescue ActiveRecord::PendingMigrationError => e
+  warn e
   exit 1
 end
-
-use Rack::MethodOverride
 
 use GenresController
 use ArtistsController
